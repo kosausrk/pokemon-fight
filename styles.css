@@ -40,12 +40,15 @@ body {
 .battle-log {
     grid-column: span 2;
     background: black;
-    padding: 10px;
-    min-height: 80px;
+    padding: 16px; /* Increased from 10px for more inner spacing */
+    min-height: 100px; /* Slightly taller */
     text-align: left;
     font-size: 14px;
     overflow-y: auto;
+    line-height: 1.6; /* Adds spacing between lines */
+    border-radius: 6px;
 }
+
 .buttons {
     grid-column: span 2;
     display: flex;
