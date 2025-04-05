@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="battle-container">
+        <div class="battle-header">Player's Turn</div>
+        
+        <div class="player">
+            <h3>Player</h3>
+            <img src="images/Charizard.png" alt="Charizard" class="pokemon-image">
+            <div id="player-health">Health: XYZ</div>
+            <div>Strength | Cunning | Speed</div>
+        </div>
+        
+        <div class="computer">
+            <h3>Computer</h3>
+            <img src="images/Gyrados.png" alt="Gyarados" class="pokemon-image">
+            <div id="computer-health">Health: XYZ</div>
+            <div>Strength | Cunning | Speed</div>
+        </div>
+        
+        <div class="battle-log" id="battle-log">
+            Battle Log:
+        </div>
+        
+        <div class="buttons">
+            <button class="attack" onclick="attack()">ATTACK</button>
+            <button class="block" onclick="block()">BLOCK</button>
+            <button class="finisher" onclick="finisher()">FINISHER</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.battle-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+.battle-header {
+    grid-column: span 2;
+    font-size: 24px;
+    font-weight: bold;
+}
+.player, .computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #444;
+    padding: 10px;
+    border-radius: 8px;
+}
+.pokemon-image {
+    width: 120px;
+    height: auto;
+}
+.battle-log {
+    grid-column: span 2;
+    background: black;
+    padding: 10px;
+    min-height: 80px;
+    text-align: left;
+    font-size: 14px;
+    overflow-y: auto;
+}
+.buttons {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.attack { background: red; color: white; }
+.block { background: blue; color: white; }
+.finisher { background: green; color: white; }
